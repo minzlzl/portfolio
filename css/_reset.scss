@@ -1,0 +1,12 @@
+body, ul, li, p, h1, h2, figure{margin: 0; padding: 0;}
+figure{font-size: 0;}
+li{list-style: none;}
+a{text-decoration: none; color:#000;}
+
+@font-face {
+  font-family: 'DOSSaemmul';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSSaemmul.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{font-family: 'DOSSaemmul'; box-sizing: border-box;}

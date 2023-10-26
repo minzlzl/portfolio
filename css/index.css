@@ -1,0 +1,126 @@
+body, ul, li, p, h1, h2, figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  font-size: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@font-face {
+  font-family: "DOSSaemmul";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSSaemmul.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "DOSSaemmul";
+  box-sizing: border-box;
+}
+
+.portfolio_wrap header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fafafa;
+  z-index: 1;
+}
+.portfolio_wrap header .header_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio_wrap header .header_wrap h2 {
+  font-weight: 400;
+}
+.portfolio_wrap header .header_wrap h2 a {
+  font-size: 50px;
+}
+.portfolio_wrap header .header_wrap ul {
+  display: flex;
+}
+.portfolio_wrap header .header_wrap ul li {
+  padding-left: 45px;
+}
+.portfolio_wrap header .header_wrap ul li:nth-of-type(1) {
+  padding-left: 0;
+}
+.portfolio_wrap header .header_wrap ul li a {
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+}
+.portfolio_wrap header .header_wrap ul li a::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #6797ED;
+  display: none;
+}
+.portfolio_wrap header .header_wrap ul li a.colors {
+  color: #6797ED;
+}
+.portfolio_wrap header .header_wrap ul li a.colors::after {
+  display: block;
+}
+.portfolio_wrap main .con1_wrap {
+  position: relative;
+  height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+}
+.portfolio_wrap main .con1_wrap .text_box {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.portfolio_wrap main .con1_wrap .text_box .text {
+  line-height: 2;
+}
+.portfolio_wrap main .con1_wrap .text_box .blink {
+  animation: blink 0.5s infinite;
+  font-size: 50px;
+}
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+.portfolio_wrap main .con1_wrap figure {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation: 0.8s scrollDown linear 0s infinite alternate;
+}
+@keyframes scrollDown {
+  0% {
+    margin-bottom: 30px;
+  }
+  100% {
+    margin-bottom: 50px;
+  }
+}
+.portfolio_wrap main .con1_wrap figure img {
+  width: 150px;
+}

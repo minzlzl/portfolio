@@ -1,0 +1,99 @@
+@import "_reset";
+
+.portfolio_wrap{
+  header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    z-index: 1;
+    .header_wrap{
+      width: 1200px;
+      margin: 0 auto;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2{
+        font-weight: 400;
+        a{
+          font-size: 50px;
+        }
+      }
+      ul{
+        display: flex;
+        li{
+          padding-left: 45px;
+          &:nth-of-type(1){
+            padding-left: 0;
+          }
+          a{
+            font-size: 24px;
+            color:#aaa;
+            cursor: pointer;
+            &::after{
+              content: "";
+              display:block;
+              width: 8px;
+              height: 8px;
+              margin: auto;
+              border-radius: 50%;
+              background-color: #6797ED;
+              display: none;
+            }
+          }
+          a.colors{
+            color:#6797ED;
+            &::after{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  main{
+    .con1_wrap{
+      position: relative;
+      height: 100vh;
+      background-color: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:#111;
+      .text_box{
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+        .text{
+          line-height: 2;
+        }
+        .blink{
+          animation: blink 0.5s infinite;
+          font-size: 50px;
+          @keyframes blink{
+            to{
+              opacity: 0;
+            }
+          }
+        }
+      }
+      figure{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        animation: 0.8s scrollDown linear 0s infinite alternate;
+        @keyframes scrollDown{
+          0%{margin-bottom: 30px;}
+          100%{margin-bottom: 50px;}
+        }
+        img{
+          width: 150px;
+        }
+      }
+    }
+  }
+}
