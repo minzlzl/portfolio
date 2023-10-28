@@ -221,5 +221,42 @@
         }
       }
     }
+    .con3_wrap{
+      background-color: #fafafa;
+      padding: 150px 0;
+      .con3{
+        width: 1200px;
+        margin: 0 auto;
+        h2{
+          font-size: 40px;
+          letter-spacing: 4px;
+          color:#333;
+          margin-bottom: 100px;
+          text-align: center;
+        }
+        ul{
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          li{
+            width: 42%;
+            margin-bottom: 100px;
+            &:nth-of-type(3),&:nth-of-type(4){
+              margin-bottom: 0;
+            }
+            figure{
+              width: 100%;
+              img{
+                width: 100%;
+              }
+            }
+            .project_txt{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
   }
 }

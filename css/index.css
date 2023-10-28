@@ -239,4 +239,41 @@ a {
 }
 .portfolio_wrap main .con2_wrap .about_bottom ul li .skills_bar:nth-of-type(5)::after {
   width: 30%;
+}
+.portfolio_wrap main .con3_wrap {
+  background-color: #fafafa;
+  padding: 150px 0;
+}
+.portfolio_wrap main .con3_wrap .con3 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.portfolio_wrap main .con3_wrap .con3 h2 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #333;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.portfolio_wrap main .con3_wrap .con3 ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio_wrap main .con3_wrap .con3 ul li {
+  width: 42%;
+  margin-bottom: 100px;
+}
+.portfolio_wrap main .con3_wrap .con3 ul li:nth-of-type(3), .portfolio_wrap main .con3_wrap .con3 ul li:nth-of-type(4) {
+  margin-bottom: 0;
+}
+.portfolio_wrap main .con3_wrap .con3 ul li figure {
+  width: 100%;
+}
+.portfolio_wrap main .con3_wrap .con3 ul li figure img {
+  width: 100%;
+}
+.portfolio_wrap main .con3_wrap .con3 ul li .project_txt {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
