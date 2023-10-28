@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 body, ul, li, p, h1, h2, figure {
   margin: 0;
   padding: 0;
@@ -124,16 +125,27 @@ a {
 .portfolio_wrap main .con1_wrap figure img {
   width: 150px;
 }
-.portfolio_wrap main .con2_wrap .about_top {
-  padding-top: 400px;
+.portfolio_wrap main .con2_wrap {
+  padding: 150px 0;
+}
+.portfolio_wrap main .con2_wrap h2 {
   width: 1200px;
-  margin: 0 auto 50px;
+  margin: 0 auto 80px;
+  text-align: center;
+  color: #6797ED;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+.portfolio_wrap main .con2_wrap .about_top {
+  width: 1200px;
+  margin: 0 auto 270px;
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 .portfolio_wrap main .con2_wrap .about_top figure {
   display: inline-block;
+  position: relative;
+  top: 170px;
+  left: 130px;
 }
 .portfolio_wrap main .con2_wrap .about_top figure img {
   width: 230px;
@@ -144,13 +156,13 @@ a {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 160px;
-  right: 0;
+  top: 0px;
+  right: 130px;
 }
 .portfolio_wrap main .con2_wrap .about_top .top_txt p {
   font-size: 20px;
   line-height: 1.8;
-  padding: 30px 70px 30px 40px;
+  padding: 40px 70px 40px 40px;
 }
 .portfolio_wrap main .con2_wrap .about_top .top_txt p b {
   display: inline-block;
@@ -173,4 +185,58 @@ a {
   position: absolute;
   bottom: -35px;
   left: 35px;
+}
+.portfolio_wrap main .con2_wrap .about_bottom {
+  width: 1200px;
+  margin: 0 auto;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li b {
+  display: inline-block;
+  font-size: 30px;
+  color: #6797ED;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li p {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  color: #555;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li p:first-child {
+  margin-top: 0;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li span {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  color: #aaa;
+  font-size: 14px;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li .skills_bar {
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 6px;
+  background-color: #eee;
+  margin-top: 5px;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li .skills_bar::after {
+  content: "";
+  display: block;
+  background: #aaa;
+  height: 6px;
+  border-radius: 6px;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li .skills_bar:nth-of-type(1)::after, .portfolio_wrap main .con2_wrap .about_bottom ul li .skills_bar:nth-of-type(3)::after {
+  width: 90%;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li .skills_bar:nth-of-type(2)::after, .portfolio_wrap main .con2_wrap .about_bottom ul li .skills_bar:nth-of-type(4)::after {
+  width: 60%;
+}
+.portfolio_wrap main .con2_wrap .about_bottom ul li .skills_bar:nth-of-type(5)::after {
+  width: 30%;
 }/*# sourceMappingURL=index.css.map */

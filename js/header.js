@@ -12,7 +12,7 @@ ela.forEach((v,k)=>{
 const home = document.querySelector('.header_wrap>ul>li:nth-of-type(1)>a'),
           about = document.querySelector('.header_wrap>ul>li:nth-of-type(2)>a'),
           project = document.querySelector('.header_wrap>ul>li:nth-of-type(3)>a'),
-          contact = document.querySelector('.header_wrap>ul>li:nth-of-type(4)>a'),
+          design = document.querySelector('.header_wrap>ul>li:nth-of-type(4)>a'),
           con1Wrap = document.querySelector('.con1_wrap'),
           con2Wrap = document.querySelector('.con2_wrap'),
           con3Wrap = document.querySelector('.con3_wrap'),
@@ -26,6 +26,9 @@ about.addEventListener("click",function(){
 project.addEventListener("click",function(){
   window.scrollBy({top: con3Wrap.getBoundingClientRect().top, behavior: 'smooth'});
 });
-contact.addEventListener("click",function(){
+design.addEventListener("click",function(){
   window.scrollBy({top: con4Wrap.getBoundingClientRect().top, behavior: 'smooth'});
 });
+
+
+const header = document.querySelector('header')
