@@ -124,3 +124,40 @@ a {
 .portfolio_wrap main .con1_wrap figure img {
   width: 150px;
 }
+.portfolio_wrap main .con2_wrap .about_top {
+  padding-top: 400px;
+  width: 1200px;
+  margin: 0 auto 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.portfolio_wrap main .con2_wrap .about_top figure {
+  display: inline-block;
+}
+.portfolio_wrap main .con2_wrap .about_top figure img {
+  width: 230px;
+}
+.portfolio_wrap main .con2_wrap .about_top .top_txt {
+  background: #f5f5f5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 160px;
+  right: 0;
+}
+.portfolio_wrap main .con2_wrap .about_top .top_txt p {
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 30px 70px 30px 40px;
+}
+.portfolio_wrap main .con2_wrap .about_top .top_txt::after {
+  content: "";
+  display: inline-block;
+  border: 20px solid transparent;
+  border-top-color: #f5f5f5;
+  position: absolute;
+  bottom: -35px;
+  left: 35px;
+}/*# sourceMappingURL=index.css.map */
