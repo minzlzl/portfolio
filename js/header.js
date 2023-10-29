@@ -8,6 +8,7 @@ ela.forEach((v,k)=>{
   };
 });
 
+const header = document.querySelector('header');
 
 const home = document.querySelector('.header_wrap>ul>li:nth-of-type(1)>a'),
           about = document.querySelector('.header_wrap>ul>li:nth-of-type(2)>a'),
@@ -19,16 +20,17 @@ const home = document.querySelector('.header_wrap>ul>li:nth-of-type(1)>a'),
           con4Wrap = document.querySelector('.con4_wrap')
 home.addEventListener("click",()=>{
   window.scrollBy({top: con1Wrap.getBoundingClientRect().top, behavior: 'smooth'});
+  header.style = `background:#fafafa`
 });
 about.addEventListener("click",function(){
   window.scrollBy({top: con2Wrap.getBoundingClientRect().top, behavior: 'smooth'});
+  header.style = `background:#fff`
 });
 project.addEventListener("click",function(){
   window.scrollBy({top: con3Wrap.getBoundingClientRect().top, behavior: 'smooth'});
+  header.style = `background:#fafafa`
 });
 design.addEventListener("click",function(){
   window.scrollBy({top: con4Wrap.getBoundingClientRect().top, behavior: 'smooth'});
+  header.style = `background:#fff`
 });
-
-
-const header = document.querySelector('header')

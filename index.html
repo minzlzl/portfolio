@@ -39,7 +39,7 @@
       </div>
       <div class="con2_wrap">
         <h2>? ABOUT ME ?</h2>
-        <div class="about_top">
+        <div class="about_top fadeIn">
           <figure><img src="./img/minji.png" alt=""></figure>
           <div class="top_txt">
             <p>안녕하세요? 포트폴리오 사이트 길잡이 <b>만쥬</b>라고 합니다.<br/>
@@ -47,7 +47,7 @@
             </p>
           </div>
         </div>
-        <div class="about_bottom">
+        <div class="about_bottom fadeIn">
           <ul>
             <li>
               <b>Personal Info</b>
@@ -123,5 +123,26 @@
       </div>
     </main>
   </div>
+
+  <style>
+    .fadeIn { transform: translateY(150px); transition: 1s;}
+    .fadeIn.active123 {transform: translateY(0); }
+  </style>
+  <script>
+    const fadeIn = document.querySelectorAll('.fadeIn')
+
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.intersectionRatio > 0) {
+                entry.target.classList.add('active123')
+            } else {
+                entry.target.classList.remove('active123')
+            }
+        })
+    })
+    fadeIn.forEach((el) => {
+        io.observe(el)
+    })
+</script>
 </body>
 </html>
