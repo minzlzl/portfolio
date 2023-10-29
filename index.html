@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 스와이퍼 슬라이드 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="./css/index.css">
   <!-- js -->
-  <!-- <script defer src="./js/typing.js"></script> -->
+  <script defer src="./js/typing.js"></script>
   <script defer src="./js/header.js"></script>
+  <script defer src="./js/swiper.js"></script>
   <title>김민지 포트폴리오</title>
 </head>
 <body>
@@ -83,41 +87,38 @@
           </ul>
         </div>
       </div>
-      <!-- <div class="con3_wrap">
+      <div class="con3_wrap">
         <div class="con3">
           <h2>PROJECT</h2>
-          <ul>
-            <li>
-              <figure><img src="./img/project01.png" alt=""></figure>
-              <div class="project_txt">
-                <p>개인 프로젝트 : 360솔루션</p>
-                <span>설명이나 기간</span>
-              </div>
-            </li>
-            <li>
-              <figure><img src="./img/project01.png" alt=""></figure>
-              <div class="project_txt">
-                <p>제목</p>
-                <span>설명이나 기간</span>
-              </div>
-            </li>
-            <li>
-              <figure><img src="./img/project01.png" alt=""></figure>
-              <div class="project_txt">
-                <p>제목</p>
-                <span>설명이나 기간</span>
-              </div>
-            </li>
-            <li>
-              <figure><img src="./img/project01.png" alt=""></figure>
-              <div class="project_txt">
-                <p>제목</p>
-                <span>설명이나 기간</span>
-              </div>
-            </li>
-          </ul>
+          <div class="swiper mySwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <figure><img src="./img/project01.png" alt=""></figure>
+                <div class="project_txt">
+                  <b>클론코딩 : 360솔루션</b>
+                  <p>설명이나 기간</p>
+                  <button>Click</button>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <figure><img src="./img/project01.png" alt=""></figure>
+                <div class="project_txt">
+                  <b>클론코딩 : 360솔루션</b>
+                  <p>설명이나 기간</p>
+                  <button>Click</button>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-button-next">
+              <img src="./img/next.png" alt="">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./img/prev.png" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-      </div> -->
+      </div>
       <div class="con4_wrap">
       </div>
     </main>
