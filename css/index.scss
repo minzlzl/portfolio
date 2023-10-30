@@ -19,6 +19,7 @@
         font-weight: 400;
         a{
           font-size: 50px;
+          cursor: url("../img/pointer2.png"), auto;
         }
       }
       ul{
@@ -31,7 +32,7 @@
           a{
             font-size: 24px;
             color:#aaa;
-            cursor: pointer;
+            cursor: url("../img/pointer2.png"), auto;
             &::after{
               content: "";
               display:block;
@@ -63,6 +64,7 @@
       justify-content: center;
       color:#111;
       .text_box{
+        height: 300px;
         font-size: 50px;
         text-align: center;
         font-weight: bold;
@@ -229,7 +231,7 @@
       background-color: #fafafa;
       padding: 150px 0;
       .con3{
-        width: 1200px;
+        width: 1300px;
         margin: 0 auto;
         h2{
           font-size: 40px;
@@ -241,17 +243,39 @@
         .swiper{
           .swiper-wrapper{
             .swiper-slide{
-              cursor: pointer;
+              // cursor: pointer;
               display: flex;
               justify-content: center;
               // align-items: center;
-              figure{
-                width: 45%;
-                margin-right: 100px;
-                margin-bottom: 100px;
-                img{
-                  width: 100%;
-                  box-shadow: 4px 4px 0px #333;
+              .sw_bg{
+                background: url("../img/project.png");
+                background-repeat: no-repeat;
+                width: 640px;
+                height: 385px;
+                background-size: 100% 100%;
+                margin-right:100px;
+                box-shadow: 4px 4px 0px #333;
+                margin-bottom: 80px;
+                figure{
+                  width: 96%;
+                  height: 85%;
+                  position: relative;
+                  top: 44px;
+                  left: 13px;
+                  overflow-y: scroll;
+                  &::-webkit-scrollbar{
+                    width: 6px;  /* 스크롤바의 너비 */
+                  }
+                  &::-webkit-scrollbar-thumb{
+                    background: #7c92ff; /* 스크롤바의 색상 */
+                    border-radius: 10px;
+                  }
+                  &::-webkit-scrollbar-track{
+                    background: #fff;  /*스크롤바 뒷 배경 색상*/
+                  }
+                  img{
+                    width: 100%;
+                  }
                 }
               }
               .project_txt{
@@ -267,25 +291,38 @@
                 button{
                   border: 1px solid #111;
                   font-size: 20px;
-                  padding: 8px 16px;
                   box-shadow: 3px 3px 0px #333;
                   background-color: #fff;
-                  cursor: pointer;
+                  cursor: url("../img/pointer2.png"), auto;
+                  a{
+                    cursor: url("../img/pointer2.png"), auto;
+                    padding: 8px 16px;
+                    display: inline-block;
+                  }
                 }
               }
             }
           }
           .swiper-button-prev{
+            cursor: url("../img/pointer2.png"), auto;
             &::after{
               content: none;
             }
           }
           .swiper-button-next{
+            cursor: url("../img/pointer2.png"), auto;
             &::after{
               content: none;
             }
           }
+          .swiper-pagination{
+            cursor: url("../img/pointer2.png"), auto;
+          }
+          .swiper-pagination-bullet{
+            cursor: url("../img/pointer2.png"), auto;
+          }
           .swiper-pagination-bullet-active{
+            cursor: url("../img/pointer2.png"), auto;
             background: #6797ED;
           }
         }

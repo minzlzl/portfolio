@@ -18,10 +18,14 @@ body{
   }
   &::-webkit-scrollbar-thumb {
     // height: 30%; /* 스크롤바의 길이 */
-    background: #6797ED; /* 스크롤바의 색상 */
+    background: #aaa; /* 스크롤바의 색상 */
     border-radius: 10px;
   }
   &::-webkit-scrollbar-track {
     background: #fafafa;  /*스크롤바 뒷 배경 색상*/
   }
+}
+
+html, body{
+	cursor: url("../img/pointer.png"), auto;
 }

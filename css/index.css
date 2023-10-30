@@ -33,11 +33,15 @@ body::-webkit-scrollbar {
   width: 8px; /* 스크롤바의 너비 */
 }
 body::-webkit-scrollbar-thumb {
-  background: #6797ED; /* 스크롤바의 색상 */
+  background: #aaa; /* 스크롤바의 색상 */
   border-radius: 10px;
 }
 body::-webkit-scrollbar-track {
   background: #fafafa; /*스크롤바 뒷 배경 색상*/
+}
+
+html, body {
+  cursor: url("../img/pointer.png"), auto;
 }
 
 .portfolio_wrap header {
@@ -61,6 +65,7 @@ body::-webkit-scrollbar-track {
 }
 .portfolio_wrap header .header_wrap h2 a {
   font-size: 50px;
+  cursor: url("../img/pointer2.png"), auto;
 }
 .portfolio_wrap header .header_wrap ul {
   display: flex;
@@ -74,7 +79,7 @@ body::-webkit-scrollbar-track {
 .portfolio_wrap header .header_wrap ul li a {
   font-size: 24px;
   color: #aaa;
-  cursor: pointer;
+  cursor: url("../img/pointer2.png"), auto;
 }
 .portfolio_wrap header .header_wrap ul li a::after {
   content: "";
@@ -102,6 +107,7 @@ body::-webkit-scrollbar-track {
   color: #111;
 }
 .portfolio_wrap main .con1_wrap .text_box {
+  height: 300px;
   font-size: 50px;
   text-align: center;
   font-weight: bold;
@@ -261,7 +267,7 @@ body::-webkit-scrollbar-track {
   padding: 150px 0;
 }
 .portfolio_wrap main .con3_wrap .con3 {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
 }
 .portfolio_wrap main .con3_wrap .con3 h2 {
@@ -272,18 +278,39 @@ body::-webkit-scrollbar-track {
   text-align: center;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide {
-  cursor: pointer;
   display: flex;
   justify-content: center;
 }
-.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide figure {
-  width: 45%;
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg {
+  background: url("../img/project.png");
+  background-repeat: no-repeat;
+  width: 640px;
+  height: 385px;
+  background-size: 100% 100%;
   margin-right: 100px;
-  margin-bottom: 100px;
-}
-.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide figure img {
-  width: 100%;
   box-shadow: 4px 4px 0px #333;
+  margin-bottom: 80px;
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg figure {
+  width: 96%;
+  height: 85%;
+  position: relative;
+  top: 44px;
+  left: 13px;
+  overflow-y: scroll;
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg figure::-webkit-scrollbar {
+  width: 6px; /* 스크롤바의 너비 */
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg figure::-webkit-scrollbar-thumb {
+  background: #7c92ff; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg figure::-webkit-scrollbar-track {
+  background: #fff; /*스크롤바 뒷 배경 색상*/
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg figure img {
+  width: 100%;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt b {
   display: inline-block;
@@ -297,18 +324,35 @@ body::-webkit-scrollbar-track {
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
   border: 1px solid #111;
   font-size: 20px;
-  padding: 8px 16px;
   box-shadow: 3px 3px 0px #333;
   background-color: #fff;
-  cursor: pointer;
+  cursor: url("../img/pointer2.png"), auto;
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button a {
+  cursor: url("../img/pointer2.png"), auto;
+  padding: 8px 16px;
+  display: inline-block;
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-button-prev {
+  cursor: url("../img/pointer2.png"), auto;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-button-prev::after {
   content: none;
 }
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-button-next {
+  cursor: url("../img/pointer2.png"), auto;
+}
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-button-next::after {
   content: none;
 }
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-pagination {
+  cursor: url("../img/pointer2.png"), auto;
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-pagination-bullet {
+  cursor: url("../img/pointer2.png"), auto;
+}
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-pagination-bullet-active {
+  cursor: url("../img/pointer2.png"), auto;
   background: #6797ED;
 }
 .portfolio_wrap main .con4_wrap {
