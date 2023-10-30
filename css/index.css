@@ -268,7 +268,7 @@ html, body {
   padding: 150px 0;
 }
 .portfolio_wrap main .con3_wrap .con3 {
-  width: 1300px;
+  width: 1400px;
   margin: 0 auto;
 }
 .portfolio_wrap main .con3_wrap .con3 h2 {
@@ -313,19 +313,31 @@ html, body {
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg figure img {
   width: 100%;
 }
-.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt b {
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt > b {
   display: inline-block;
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 23px;
+  margin-bottom: 50px;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts {
-  margin-bottom: 50px;
+  font-size: 17px;
   display: flex;
+  margin-bottom: 20px;
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts b {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  color: #555;
+  margin-right: 20px;
+  width: 100px;
+  display: inline-block;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts p {
   font-family: Pretendard, "Noto Sans KR", sans-serif;
+  color: #555;
+  line-height: 1.5;
+  font-weight: 300;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
+  margin-top: 50px;
   border: 1px solid #111;
   font-size: 20px;
   box-shadow: 3px 3px 0px #333;

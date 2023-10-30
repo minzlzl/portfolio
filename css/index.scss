@@ -232,7 +232,7 @@
       background-color: #fafafa;
       padding: 150px 0;
       .con3{
-        width: 1300px;
+        width: 1400px;
         margin: 0 auto;
         h2{
           font-size: 40px;
@@ -280,19 +280,31 @@
                 }
               }
               .project_txt{
-                b{
+                >b{
                   display: inline-block;
-                  font-size: 22px;
-                  margin-bottom: 20px;
+                  font-size: 23px;
+                  margin-bottom: 50px;
                 }
                 .project_txts{
-                  margin-bottom: 50px;
+                  font-size: 17px;
                   display: flex;
+                  margin-bottom: 20px;
+                  b{
+                    font-family: Pretendard,'Noto Sans KR', sans-serif;
+                    color:#555;
+                    margin-right: 20px;
+                    width: 100px;
+                    display: inline-block;
+                  }
                   p{
                     font-family: Pretendard,'Noto Sans KR', sans-serif;
+                    color:#555;
+                    line-height: 1.5;
+                    font-weight: 300;
                   }
                 }
                 button{
+                  margin-top: 50px;
                   border: 1px solid #111;
                   font-size: 20px;
                   box-shadow: 3px 3px 0px #333;
