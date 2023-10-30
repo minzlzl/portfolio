@@ -150,12 +150,13 @@ body::-webkit-scrollbar-track {
 }
 .portfolio_wrap main .con2_wrap .about_top {
   width: 1200px;
-  margin: 0 auto 270px;
+  margin: 0 auto;
   position: relative;
+  padding: 0 0 500px 0;
 }
 .portfolio_wrap main .con2_wrap .about_top figure {
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: 170px;
   left: 130px;
 }
