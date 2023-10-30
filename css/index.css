@@ -142,6 +142,7 @@ html, body {
 }
 .portfolio_wrap main .con1_wrap figure img {
   width: 150px;
+  cursor: url("../img/pointer2.png"), auto;
 }
 .portfolio_wrap main .con2_wrap {
   padding: 150px 0;
@@ -317,9 +318,12 @@ html, body {
   font-size: 22px;
   margin-bottom: 20px;
 }
-.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt p {
-  font-family: Pretendard, "Noto Sans KR", sans-serif;
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts {
   margin-bottom: 50px;
+  display: flex;
+}
+.portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts p {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
   border: 1px solid #111;

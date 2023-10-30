@@ -94,6 +94,7 @@
         }
         img{
           width: 150px;
+          cursor: url("../img/pointer2.png"), auto;
         }
       }
     }
@@ -284,9 +285,12 @@
                   font-size: 22px;
                   margin-bottom: 20px;
                 }
-                p{
-                  font-family: Pretendard,'Noto Sans KR', sans-serif;
+                .project_txts{
                   margin-bottom: 50px;
+                  display: flex;
+                  p{
+                    font-family: Pretendard,'Noto Sans KR', sans-serif;
+                  }
                 }
                 button{
                   border: 1px solid #111;

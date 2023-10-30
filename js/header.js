@@ -49,3 +49,9 @@ window.addEventListener('scroll',()=>{
     }
   })
 })
+
+
+const scrollDown = document.querySelector('.con1_wrap>figure>img');
+scrollDown.addEventListener("click",function(){
+  window.scrollBy({top: con2Wrap.getBoundingClientRect().top, behavior: 'smooth'});
+});
