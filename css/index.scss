@@ -134,6 +134,8 @@
             padding: 40px 70px 40px 40px;
             b{
               display: inline-block;
+              position: relative;
+              z-index: 1;
               &::after{
                 content: "";
                 display: block;
@@ -141,8 +143,9 @@
                 height: 8px;
                 background: #6797ED;
                 border-radius: 8px;
-                position: relative;
-                bottom: 12px;
+                position: absolute;
+                bottom: 5px;
+                z-index: -1;
               }
             }
           }
@@ -237,6 +240,7 @@
         .swiper{
           .swiper-wrapper{
             .swiper-slide{
+              cursor: pointer;
               display: flex;
               justify-content: center;
               // align-items: center;
@@ -265,6 +269,7 @@
                   padding: 8px 16px;
                   box-shadow: 3px 3px 0px #333;
                   background-color: #fff;
+                  cursor: pointer;
                 }
               }
             }
@@ -282,6 +287,20 @@
           .swiper-pagination-bullet-active{
             background: #6797ED;
           }
+        }
+      }
+    }
+    .con4_wrap{
+      padding: 150px 0;
+      .con4{
+        width: 1200px;
+        margin:0 auto;
+        h2{
+          font-size: 40px;
+          letter-spacing: 4px;
+          color:#333;
+          margin-bottom: 100px;
+          text-align: center;
         }
       }
     }

@@ -22,7 +22,7 @@ window.onload = function(){
     let txt = imGround[i++];
     text.innerHTML += txt === "\n" ? "<br/>" : txt;
     if (i < imGround.length) {
-      setTimeout(typing, 100); // 다음 타이핑을 예약
+      setTimeout(typing, 70); // 다음 타이핑을 예약
     }
   }
 

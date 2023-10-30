@@ -11,3 +11,17 @@ a{text-decoration: none; color:#000;}
 }
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 *{font-family: 'DOSSaemmul'; box-sizing: border-box;}
+
+body{
+  &::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+  }
+  &::-webkit-scrollbar-thumb {
+    // height: 30%; /* 스크롤바의 길이 */
+    background: #6797ED; /* 스크롤바의 색상 */
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #fafafa;  /*스크롤바 뒷 배경 색상*/
+  }
+}

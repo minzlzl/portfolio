@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 body, ul, li, p, h1, h2, figure {
   margin: 0;
@@ -26,6 +27,17 @@ a {
 * {
   font-family: "DOSSaemmul";
   box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  background: #6797ED; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #fafafa; /*스크롤바 뒷 배경 색상*/
 }
 
 .portfolio_wrap header {
@@ -166,6 +178,8 @@ a {
 }
 .portfolio_wrap main .con2_wrap .about_top .top_txt p b {
   display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 .portfolio_wrap main .con2_wrap .about_top .top_txt p b::after {
   content: "";
@@ -174,8 +188,9 @@ a {
   height: 8px;
   background: #6797ED;
   border-radius: 8px;
-  position: relative;
-  bottom: 12px;
+  position: absolute;
+  bottom: 5px;
+  z-index: -1;
 }
 .portfolio_wrap main .con2_wrap .about_top .top_txt::after {
   content: "";
@@ -256,6 +271,7 @@ a {
   text-align: center;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide {
+  cursor: pointer;
   display: flex;
   justify-content: center;
 }
@@ -283,6 +299,7 @@ a {
   padding: 8px 16px;
   box-shadow: 3px 3px 0px #333;
   background-color: #fff;
+  cursor: pointer;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-button-prev::after {
   content: none;
@@ -292,4 +309,18 @@ a {
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-pagination-bullet-active {
   background: #6797ED;
-}/*# sourceMappingURL=index.css.map */
+}
+.portfolio_wrap main .con4_wrap {
+  padding: 150px 0;
+}
+.portfolio_wrap main .con4_wrap .con4 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.portfolio_wrap main .con4_wrap .con4 h2 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #333;
+  margin-bottom: 100px;
+  text-align: center;
+}
