@@ -23,12 +23,17 @@ window.onload = function(){
     text.innerHTML += txt === "\n" ? "<br/>" : txt;
     if (i < imGround.length) {
       setTimeout(typing, 70); // 다음 타이핑을 예약
-      body.style = `overflow:hidden`
+      if(window.scrollY < 250){
+        body.style = `overflow:hidden`
+        scrollDown.style = `display:none`
+      }else{
+        body.style = `overflow:auto`
+        scrollDown.style = `display:block; margin:0 auto`
+      }
     }else{
       body.style = `overflow:auto`
       scrollDown.style = `display:block; margin:0 auto`
     }
   }
-
   typing(); // 최초 한 번 실행
 };
