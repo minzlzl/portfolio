@@ -197,7 +197,7 @@ html, body {
   background: #6797ED;
   border-radius: 8px;
   position: absolute;
-  bottom: 5px;
+  bottom: 7px;
   z-index: -1;
 }
 .portfolio_wrap main .con2_wrap .about_top .top_txt::after {
