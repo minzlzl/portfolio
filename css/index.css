@@ -140,6 +140,7 @@ html, body {
   }
 }
 .portfolio_wrap main .con1_wrap figure img {
+  display: none;
   width: 150px;
   cursor: url("../img/pointer2.png"), auto;
 }
@@ -387,36 +388,36 @@ html, body {
   margin-bottom: 100px;
   text-align: center;
 }
-.portfolio_wrap main .con4_wrap .con4 > b {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 > b {
   display: block;
   text-align: center;
   font-size: 22px;
   margin-bottom: 40px;
   color: #444;
 }
-.portfolio_wrap main .con4_wrap .con4 .mySwipers {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers {
   height: 310px;
   margin-bottom: 150px;
 }
-.portfolio_wrap main .con4_wrap .con4 .mySwipers:last-child {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers:last-child {
   margin-bottom: 0;
 }
-.portfolio_wrap main .con4_wrap .con4 .mySwipers li {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers li {
   display: flex;
   justify-content: space-between;
   cursor: url("../img/pointer2.png"), auto;
 }
-.portfolio_wrap main .con4_wrap .con4 .mySwipers li figure {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers li figure {
   text-align: center;
   width: 22%;
 }
-.portfolio_wrap main .con4_wrap .con4 .mySwipers li figure img {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers li figure img {
   width: 100%;
 }
-.portfolio_wrap main .con4_wrap .con4 .mySwipers .swiper-pagination-fraction {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers .swiper-pagination-fraction {
   bottom: var(--swiper-pagination-bottom, 0px);
 }
-.portfolio_wrap main .con4_wrap .con4 .popup_bg {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 .popup_bg {
   display: none;
   width: 100%;
   height: 100%;
@@ -428,7 +429,7 @@ html, body {
   z-index: 999;
   cursor: url("../img/pointer2.png"), auto;
 }
-.portfolio_wrap main .con4_wrap .con4 .popup_bg .popup_con {
+.portfolio_wrap main .con4_wrap .con4 .con4_1 .popup_bg .popup_con {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -438,39 +439,46 @@ html, body {
   background-color: #fff;
   z-index: 1000;
 }
-.portfolio_wrap main .con4_wrap .con4 .page {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 > b {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 40px;
+  color: #444;
+}
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list {
   width: 28%;
   margin-bottom: 80px;
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list:nth-of-type(4), .portfolio_wrap main .con4_wrap .con4 .page .page_list:nth-of-type(5), .portfolio_wrap main .con4_wrap .con4 .page .page_list:nth-of-type(6) {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list:nth-of-type(4), .portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list:nth-of-type(5), .portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list:nth-of-type(6) {
   margin-bottom: 0;
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list figure {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list figure {
   margin-bottom: 45px;
   height: 250px;
   overflow-y: scroll;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list figure::-webkit-scrollbar {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list figure::-webkit-scrollbar {
   width: 6px; /* 스크롤바의 너비 */
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list figure::-webkit-scrollbar-thumb {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list figure::-webkit-scrollbar-thumb {
   background: #aaa; /* 스크롤바의 색상 */
   border-radius: 10px;
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list figure::-webkit-scrollbar-track {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list figure::-webkit-scrollbar-track {
   background: #fff; /*스크롤바 뒷 배경 색상*/
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list figure img {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list figure img {
   width: 100%;
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list > p a {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list > p a {
   cursor: url("../img/pointer2.png"), auto;
   border: 1px solid #6797ED;
   border-radius: 30px;
@@ -484,7 +492,7 @@ html, body {
   position: relative;
   overflow: hidden;
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list > p a::before {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list > p a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -496,10 +504,10 @@ html, body {
   transition: all 0.5s;
   z-index: -1;
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list > p a:hover {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list > p a:hover {
   color: #fff;
 }
-.portfolio_wrap main .con4_wrap .con4 .page .page_list > p a:hover::before {
+.portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list > p a:hover::before {
   transform: translateX(0px);
 }
 .portfolio_wrap .top {

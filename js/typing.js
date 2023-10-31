@@ -23,6 +23,10 @@ window.onload = function(){
     text.innerHTML += txt === "\n" ? "<br/>" : txt;
     if (i < imGround.length) {
       setTimeout(typing, 70); // 다음 타이핑을 예약
+      body.style = `overflow:hidden`
+    }else{
+      body.style = `overflow:auto`
+      scrollDown.style = `display:block; margin:0 auto`
     }
   }
 
