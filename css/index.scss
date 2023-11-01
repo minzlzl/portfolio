@@ -501,6 +501,11 @@
     box-shadow: 3px 3px 0px #333;
     // background-color: #fff;
     cursor: url("../img/pointer2.png"), auto;
+    z-index: 98;
     display: none;
   }
 }
+.fadeIn { transform: translateY(150px); transition: .7s; opacity: 0;}
+.fadeIn.active123 {transform: translateY(0); opacity: 1;}
+
+@import "_m_index";
