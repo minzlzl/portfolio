@@ -603,7 +603,35 @@
       } 
     }
   }
-} 
+}
+@media(max-width:768px){
+  .portfolio_wrap{
+    main{
+      .con4_wrap{
+        .con4{
+          .con4_2{
+            .page{
+              .page_list{
+                >p{
+                  a{
+                    transition: .5s;
+                    &::before{
+                      content: none;
+                    }
+                    &:hover{
+                      background-color: #6797ED;
+                      color:#fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media(max-width:700px){
   .portfolio_wrap{
     header{
