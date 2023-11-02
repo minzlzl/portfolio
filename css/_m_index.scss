@@ -6,6 +6,9 @@
         width: 100%;
         .con3{
           max-width: 95%;
+          .swiper .swiper-wrapper .swiper-slide .sw_bg{
+            margin-right: 50px;
+          }
         }
       }
     }
@@ -145,28 +148,26 @@
                   }
                 }
                 .project_txt{
+                  width: calc(100% - 640px);
                   >b{
                     margin-bottom: 30px;
                   }
                   .project_txts{
-                    font-size: 17px;
+                    font-size: 14px;
                     display: flex;
                     margin-bottom: 20px;
                     b{
                       margin-right:15px;
                     }
-                  }
-                  button{
-                    margin-top: 50px;
-                    border: 1px solid #111;
-                    font-size: 20px;
-                    box-shadow: 3px 3px 0px #333;
-                    background-color: #fff;
-                    cursor: url("../img/pointer2.png"), auto;
-                    a{
-                      cursor: url("../img/pointer2.png"), auto;
-                      padding: 8px 16px;
-                      display: inline-block;
+                    >p{
+                      width: calc(100% - 100px);
+                    }
+                    &:nth-of-type(1),&:nth-of-type(4),&:nth-of-type(5){
+                      >p{
+                        br{
+                          display: none;
+                        }
+                      }
                     }
                   }
                 }
@@ -243,7 +244,6 @@
                   background-size: 100% 100%;
                   margin-right:0px;
                   box-shadow: 4px 4px 0px #333;
-                  margin-bottom: 100px;
                   figure{
                     width: 96%;
                     height: 85%;
@@ -253,6 +253,7 @@
                   }
                 }
                 .project_txt{
+                  width:50%;
                   >b{
                     display: inline-block;
                     font-size: 25px;
@@ -270,14 +271,12 @@
                       display: inline-block;
                     }
                     p{
-                      font-family: Pretendard,'Noto Sans KR', sans-serif;
-                      color:#555;
                       line-height: 1.5;
                       font-weight: 300;
                     }
                   }
                   button{
-                    margin-top: 50px;
+                    margin-top: 30px;
                     border: 1px solid #111;
                     font-size: 20px;
                     box-shadow: 3px 3px 0px #333;
@@ -548,6 +547,7 @@
                   }
                 }
                 .project_txt{
+                  width: 65%;
                   >b{
                     margin-bottom: 30px;
                   }
@@ -560,11 +560,6 @@
                     }
                   }
                   button{
-                    margin-top: 50px;
-                    border: 1px solid #111;
-                    font-size: 20px;
-                    box-shadow: 3px 3px 0px #333;
-                    background-color: #fff;
                     a{
                       padding: 8px 16px;
                       display: inline-block;
@@ -727,6 +722,7 @@
                   }
                 }
                 .project_txt{
+                  width: 70%;
                   >b{
                     margin-bottom: 30px;
                     font-size: 22px;
@@ -919,6 +915,7 @@
                 }
                 .project_txt{
                   padding: 0 30px;
+                  width: 90%;
                   >b{
                     margin-bottom: 25px;
                     font-size: 19px;
@@ -929,6 +926,16 @@
                     b{
                       margin-right:15px;
                       width: 90px;
+                    }
+                    >p{
+                      width: calc(100% - 90px);
+                    }
+                    &:nth-of-type(4),&:nth-of-type(5){
+                      >p{
+                        br{
+                          display: none;
+                        }
+                      }
                     }
                   }
                   button{
@@ -1088,7 +1095,10 @@
                       margin-right:15px;
                       width: 70px;
                     }
-                    &:nth-of-type(4){
+                    >p{
+                      width: calc(100% - 70px);
+                    }
+                    &:nth-of-type(4),&:nth-of-type(5){
                       >p{
                         br{
                           display: none;

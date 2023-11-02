@@ -340,7 +340,7 @@ html, body {
   font-weight: 300;
 }
 .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
-  margin-top: 50px;
+  margin-top: 30px;
   border: 1px solid #111;
   font-size: 20px;
   box-shadow: 3px 3px 0px #333;
@@ -544,6 +544,9 @@ html, body {
   .portfolio_wrap main .con3_wrap .con3 {
     max-width: 95%;
   }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg {
+    margin-right: 50px;
+  }
   .portfolio_wrap .top {
     bottom: 30px;
     right: 30px;
@@ -667,29 +670,25 @@ html, body {
     top: 44px;
     left: 13px;
   }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt {
+    width: calc(100% - 640px);
+  }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt > b {
     margin-bottom: 30px;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts {
-    font-size: 17px;
+    font-size: 14px;
     display: flex;
     margin-bottom: 20px;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts b {
     margin-right: 15px;
   }
-  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
-    margin-top: 50px;
-    border: 1px solid #111;
-    font-size: 20px;
-    box-shadow: 3px 3px 0px #333;
-    background-color: #fff;
-    cursor: url("../img/pointer2.png"), auto;
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts > p {
+    width: calc(100% - 100px);
   }
-  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button a {
-    cursor: url("../img/pointer2.png"), auto;
-    padding: 8px 16px;
-    display: inline-block;
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(1) > p br, .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(4) > p br, .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(5) > p br {
+    display: none;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-button-prev {
     cursor: url("../img/pointer2.png"), auto;
@@ -748,7 +747,6 @@ html, body {
     background-size: 100% 100%;
     margin-right: 0px;
     box-shadow: 4px 4px 0px #333;
-    margin-bottom: 100px;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg figure {
     width: 96%;
@@ -756,6 +754,9 @@ html, body {
     position: relative;
     top: 44px;
     left: 13px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt {
+    width: 50%;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt > b {
     display: inline-block;
@@ -775,13 +776,11 @@ html, body {
     display: inline-block;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts p {
-    font-family: Pretendard, "Noto Sans KR", sans-serif;
-    color: #555;
     line-height: 1.5;
     font-weight: 300;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
-    margin-top: 50px;
+    margin-top: 30px;
     border: 1px solid #111;
     font-size: 20px;
     box-shadow: 3px 3px 0px #333;
@@ -942,6 +941,9 @@ html, body {
     top: 38px;
     left: 12px;
   }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt {
+    width: 65%;
+  }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt > b {
     margin-bottom: 30px;
   }
@@ -952,13 +954,6 @@ html, body {
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts b {
     margin-right: 15px;
-  }
-  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
-    margin-top: 50px;
-    border: 1px solid #111;
-    font-size: 20px;
-    box-shadow: 3px 3px 0px #333;
-    background-color: #fff;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button a {
     padding: 8px 16px;
@@ -1062,6 +1057,9 @@ html, body {
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg figure {
     top: 33px;
     left: 8px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt {
+    width: 70%;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt > b {
     margin-bottom: 30px;
@@ -1202,6 +1200,7 @@ html, body {
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt {
     padding: 0 30px;
+    width: 90%;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt > b {
     margin-bottom: 25px;
@@ -1214,6 +1213,12 @@ html, body {
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts b {
     margin-right: 15px;
     width: 90px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts > p {
+    width: calc(100% - 90px);
+  }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(4) > p br, .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(5) > p br {
+    display: none;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
     margin-top: 20px;
@@ -1327,7 +1332,10 @@ html, body {
     margin-right: 15px;
     width: 70px;
   }
-  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(4) > p br {
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts > p {
+    width: calc(100% - 70px);
+  }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(4) > p br, .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(5) > p br {
     display: none;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
