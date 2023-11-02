@@ -1301,7 +1301,7 @@ html, body {
   }
   .portfolio_wrap main .con2_wrap .about_top .top_txt p {
     font-size: 14px;
-    padding: 16px;
+    padding: 15px;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .sw_bg {
     width: 280px;
@@ -1326,6 +1326,9 @@ html, body {
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts b {
     margin-right: 15px;
     width: 70px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt .project_txts:nth-of-type(4) > p br {
+    display: none;
   }
   .portfolio_wrap main .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide .project_txt button {
     margin-top: 20px;

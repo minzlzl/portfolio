@@ -1056,7 +1056,7 @@
           .top_txt{
             p{
               font-size: 14px;
-              padding: 16px;
+              padding: 15px;
             }
           }
         }
@@ -1087,6 +1087,13 @@
                     b{
                       margin-right:15px;
                       width: 70px;
+                    }
+                    &:nth-of-type(4){
+                      >p{
+                        br{
+                          display: none;
+                        }
+                      }
                     }
                   }
                   button{
