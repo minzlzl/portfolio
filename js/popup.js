@@ -13,3 +13,50 @@ designClick.forEach(function(v,k){
     }
   };
 });
+
+const reviewClick = document.querySelectorAll('.project_btn button:nth-of-type(2)'),
+      reviewBg = document.querySelector('.review_bg'),
+      ts = document.querySelectorAll('.ts');
+
+
+
+reviewClick.forEach(function(v2,k2){
+  let count = 0;
+  let num = 0;
+  v2.onclick = function(){
+    reviewBg.style = `display:block`
+    body.style = `overflow:hidden`
+    count = k2;
+    ts.forEach((v3,k3)=>{
+      if(count == 0){
+        if(k3 == 0){
+          ts[num].style = `display:none`
+          v3.style = `display:block`
+        }
+      }else if(count == 1){
+        if(k3 == 1){
+          ts[num].style = `display:none`
+          v3.style = `display:block`
+        }
+      }
+      else if(count == 2){
+        if(k3 == 2){
+          ts[num].style = `display:none`
+          v3.style = `display:block`
+        }
+      }
+      else if(count == 3){
+        if(k3 == 3){
+          ts[num].style = `display:none`
+          v3.style = `display:block`
+        }
+      }
+      num = k3
+    })
+
+    reviewBg.onclick = function(){
+      reviewBg.style = `display:none`
+      body.style = `overflow:auto`
+    }
+  }
+})
