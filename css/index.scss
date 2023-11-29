@@ -370,16 +370,35 @@
             height: 600px;
             background-color: #fff;
             z-index: 1000;
-            padding:50px 65px;
+            padding:60px 65px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar{
+              width: 5px;
+            }
+            &::-webkit-scrollbar-thumb{
+              background: #aaa;
+              border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track {
+              background: #fafafa;
+            }
             >p{
               font-size: 40px;
-              margin-bottom: 30px;
+              margin-bottom: 40px;
             }
             .ts{
               display: none;
-              >p{
-                font-size: 18px;
-                margin-bottom: 20px;
+              .ts_txt{
+                margin-bottom: 25px;
+                >span{
+                  font-size: 18px;
+                  font-family: Pretendard,'Noto Sans KR', sans-serif;
+                  color: #555;
+                  font-weight: 300;
+                  &:last-child{
+                    line-height:1.5;
+                  }
+                }
               }
             }
           }

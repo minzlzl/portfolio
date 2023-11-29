@@ -399,18 +399,37 @@ html, body {
   height: 600px;
   background-color: #fff;
   z-index: 1000;
-  padding: 50px 65px;
+  padding: 60px 65px;
+  overflow-y: scroll;
+}
+.portfolio_wrap main .con3_wrap .con3 .review_bg .review_con::-webkit-scrollbar {
+  width: 5px;
+}
+.portfolio_wrap main .con3_wrap .con3 .review_bg .review_con::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+.portfolio_wrap main .con3_wrap .con3 .review_bg .review_con::-webkit-scrollbar-track {
+  background: #fafafa;
 }
 .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con > p {
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con .ts {
   display: none;
 }
-.portfolio_wrap main .con3_wrap .con3 .review_bg .review_con .ts > p {
+.portfolio_wrap main .con3_wrap .con3 .review_bg .review_con .ts .ts_txt {
+  margin-bottom: 25px;
+}
+.portfolio_wrap main .con3_wrap .con3 .review_bg .review_con .ts .ts_txt > span {
   font-size: 18px;
-  margin-bottom: 20px;
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  color: #555;
+  font-weight: 300;
+}
+.portfolio_wrap main .con3_wrap .con3 .review_bg .review_con .ts .ts_txt > span:last-child {
+  line-height: 1.5;
 }
 .portfolio_wrap main .con4_wrap {
   padding: 150px 0;
@@ -889,8 +908,16 @@ html, body {
     max-width: 82%;
   }
   .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con {
+    padding: 50px 65px;
     width: 800px;
     height: 450px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con > p {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con .ts .ts_txt > span {
+    font-size: 16px;
   }
   .portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers {
     height: 253px;
@@ -927,6 +954,7 @@ html, body {
 }
 @media (max-width: 950px) {
   .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con {
+    padding: 40px;
     width: 650px;
     height: 400px;
   }
@@ -1049,8 +1077,16 @@ html, body {
 }
 @media (max-width: 768px) {
   .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con {
+    padding: 30px 40px;
     width: 550px;
     height: 360px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con > p {
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con .ts .ts_txt > span {
+    font-size: 15px;
   }
   .portfolio_wrap main .con4_wrap .con4 .con4_2 .page .page_list > p a {
     transition: 0.5s;
@@ -1443,6 +1479,10 @@ html, body {
   .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con {
     width: 280px;
     height: 240px;
+    padding: 30px;
+  }
+  .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con > p {
+    font-size: 26px;
   }
   .portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers {
     margin-bottom: 35px;

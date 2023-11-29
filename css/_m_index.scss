@@ -384,10 +384,25 @@
           max-width:82%;
         }
       }
-      .con3_wrap .con3 .review_bg .review_con{
-        width: 800px;
-        height: 450px;
+      .con3_wrap .con3 .review_bg{
+        .review_con{
+          padding: 50px 65px;
+          width: 800px;
+          height: 450px;
+          >p{
+            font-size: 35px;
+            margin-bottom: 30px;
+          }
+          .ts{
+            .ts_txt{
+              >span{
+                font-size: 16px;
+              }
+            }
+          }
+        }
       }
+      
       .con4_wrap{
         .con4{
           .con4_1{
@@ -478,9 +493,12 @@
 //세분화 반응형
 
 @media(max-width:950px){
-  .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con{
-    width: 650px;
-    height: 400px;
+  .portfolio_wrap main .con3_wrap .con3 .review_bg{
+    .review_con{
+      padding: 40px;
+      width: 650px;
+      height: 400px;
+    }
   }
 }
 @media(max-width:900px){
@@ -632,9 +650,23 @@
 @media(max-width:768px){
   .portfolio_wrap{
     main{
-      .con3_wrap .con3 .review_bg .review_con{
-        width: 550px;
-        height: 360px;
+      .con3_wrap .con3 .review_bg{
+        .review_con{
+          padding:30px 40px;
+          width: 550px;
+          height: 360px;
+          >p{
+            font-size: 33px;
+            margin-bottom: 20px;
+          }
+          .ts{
+            .ts_txt{
+              >span{
+                font-size: 15px;
+              }
+            }
+          }
+        }
       }
       .con4_wrap{
         .con4{
@@ -1183,6 +1215,10 @@
           .review_bg .review_con{
             width: 280px;
             height: 240px;
+            padding: 30px;
+            >p{
+              font-size:26px;
+            }
           }
         }
       }
