@@ -195,6 +195,22 @@
               background: #6797ED;
             }
           }
+          .review_bg{
+            .review_con{
+              width: 900px;
+              height: 500px;
+              >p{
+                font-size: 40px;
+                margin-bottom: 30px;
+              }
+              .ts{
+                >p{
+                  font-size: 18px;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
         }
       }
       .con4_wrap{
@@ -237,11 +253,13 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                padding-bottom: 30px;
                 .sw_bg{
                   width: 640px;
                   height: 385px;
                   background-size: 100% 100%;
                   margin-right:0px;
+                  margin-bottom: 60px;
                   box-shadow: 4px 4px 0px #333;
                   figure{
                     width: 96%;
@@ -256,7 +274,7 @@
                   >b{
                     display: inline-block;
                     font-size: 25px;
-                    margin-bottom: 50px;
+                    margin-bottom: 40px;
                   }
                   .project_txts{
                     font-size: 17px;
@@ -312,6 +330,9 @@
               cursor: url("../img/pointer2.png"), auto;
               background: #6797ED;
             }
+            .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+              bottom: var(--swiper-pagination-bottom,0px);
+            }
           }
         }
       }
@@ -362,6 +383,10 @@
         .about_top{
           max-width:82%;
         }
+      }
+      .con3_wrap .con3 .review_bg .review_con{
+        width: 800px;
+        height: 450px;
       }
       .con4_wrap{
         .con4{
@@ -452,6 +477,12 @@
 }
 //세분화 반응형
 
+@media(max-width:950px){
+  .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con{
+    width: 650px;
+    height: 400px;
+  }
+}
 @media(max-width:900px){
   .portfolio_wrap{
     header{
@@ -531,7 +562,7 @@
           .swiper{
             .swiper-wrapper{
               .swiper-slide{
-                padding:0;
+                padding:0 0 30px 0;
                 .sw_bg{
                   width: 540px;
                   height: 330px;              
@@ -601,6 +632,10 @@
 @media(max-width:768px){
   .portfolio_wrap{
     main{
+      .con3_wrap .con3 .review_bg .review_con{
+        width: 550px;
+        height: 360px;
+      }
       .con4_wrap{
         .con4{
           .con4_2{
@@ -647,6 +682,15 @@
       }
     }
     main{
+      .con3_wrap .con3 .swiper .swiper-button-next{
+        display: none;
+      }
+      .con3_wrap .con3 .swiper .swiper-button-prev{
+        display: none;
+      }
+      .con3_wrap .con3 .swiper .swiper-wrapper .swiper-slide{
+        padding: 0px 0 40px 0;
+      }
       .con4_wrap{
         .con4{
           .con4_1{
@@ -657,6 +701,12 @@
         }
       }
     }
+  }
+}
+@media(max-width:680px){
+  .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con{
+    width: 480px;
+    height: 310px;
   }
 }
 @media(max-width:640px){
@@ -709,7 +759,7 @@
           .swiper{
             .swiper-wrapper{
               .swiper-slide{
-                padding:0;
+                padding:0 0 40px 0;
                 .sw_bg{
                   width: 400px;
                   height: 290px;              
@@ -823,6 +873,10 @@
 @media(max-width:600px){
   .portfolio_wrap{
     main{
+      .con3_wrap .con3 .review_bg .review_con{
+        width: 420px;
+        height: 280px;
+      }    
       .con4_wrap{
         .con4{
           .con4_1{
@@ -964,6 +1018,9 @@
               cursor: url("../img/pointer2.png"), auto;
               background: #6797ED;
             }
+          }
+          .review_bg .review_con{
+            width: 350px;
           }
         }
       }
@@ -1122,6 +1179,10 @@
             .swiper-button-next{
               display: none;
             }
+          }
+          .review_bg .review_con{
+            width: 280px;
+            height: 240px;
           }
         }
       }
