@@ -479,7 +479,8 @@ html, body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 999;
   cursor: url("../img/pointer2.png"), auto;
 }
@@ -1257,7 +1258,6 @@ html, body {
 @media (max-width: 600px) {
   .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con {
     width: 420px;
-    height: 280px;
   }
   .portfolio_wrap main .con4_wrap .con4 .con4_1 .mySwipers {
     height: 141px;
@@ -1478,7 +1478,7 @@ html, body {
   }
   .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con {
     width: 280px;
-    height: 240px;
+    height: 300px;
     padding: 30px;
   }
   .portfolio_wrap main .con3_wrap .con3 .review_bg .review_con > p {
@@ -1515,4 +1515,4 @@ html, body {
     height: 40px;
     font-size: 16px;
   }
-}
+}/*# sourceMappingURL=index.css.map */

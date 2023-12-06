@@ -26,6 +26,7 @@ reviewClick.forEach(function(v2,k2){
     body.style = `overflow:hidden`
     count = k2;
     ts.forEach((v3,k3)=>{
+      v3.style = `display:none`;
       if(count == 0){
         ts[num].style = `display:none`;
         ts[0].style = `display:block`;
@@ -38,6 +39,9 @@ reviewClick.forEach(function(v2,k2){
       }else if(count == 3){
         ts[num].style = `display:none`;
         ts[3].style = `display:block`;
+      }else{
+        ts[num].style = `display:none`;
+        ts[4].style = `display:block`;
       }
       num = k3;
     })
